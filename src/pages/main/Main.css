@@ -1,0 +1,199 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    overflow-y: hidden ;
+}
+
+.main__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #454636;
+}
+
+
+.col1 {
+    display: flex;
+    position: relative;
+    z-index: 9;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #454636;
+    flex: 1;
+}
+
+.col2 {
+    display: flex;
+    position: relative;
+    z-index: 9;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #7b5543b3;
+    flex: 2;
+}
+
+.col3 {
+    display: flex;
+    position: relative;
+    z-index: 9;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #454636;
+    flex: 1;
+}
+
+.main__container {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.main__title {
+    padding-top: 5em;
+}
+
+.main__container h1 {
+    font-size: 9.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    font-family: 'ClashDisplay-Bold';
+}
+
+.main__container h2 {
+    font-size: 6.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    font-family: 'ClashDisplay-Bold';
+}
+
+.main__image {
+    position: absolute;
+    z-index: 19;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    top: 15rem;
+
+}
+
+.main__image img {
+    width: 80vw;
+    height: 80vh;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 40rem;
+}
+
+.col1__bottom__left {
+    position: absolute;
+    z-index: 19;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    top: -6rem;
+    left: 0;
+}
+
+.col1__bottom__left h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    padding-left: 1rem;
+    font-family: 'ClashDisplay-Regular';
+    line-height: 1.4;
+}
+
+.col3__bottom__right {
+    position: absolute;
+    z-index: 19;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    top: -2rem;
+    left: 0;
+}
+
+.col3__bottom__right h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    padding-right: 1rem;
+    font-family: 'ClashDisplay-Regular';
+}
+
+.image__circle {
+    position: absolute;
+    z-index: 19;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 19vh;
+    width: 11vw;
+    top: 15rem;
+    border-radius: 50%;
+    left: 40rem;
+    background-color: #ffffda;
+    border: 5px solid var(--nav-overlay-color);
+    cursor: pointer;
+}
+
+.rotate {
+    animation: rotateIcon 10s cubic-bezier(0.96, 1, 0.8, 0.7) infinite;
+}
+
+/* Define the animation keyframes */
+@keyframes rotateIcon {
+    from {
+        transform: rotate(0deg);
+        transition: all 2s cubic-bezier(0.96, 1, 0.8, 0.7);
+
+    }
+
+    to {
+        transform: rotate(360deg);
+        transition: all 2s cubic-bezier(0.96, 1, 0.8, 0.7);
+
+    }
+}
