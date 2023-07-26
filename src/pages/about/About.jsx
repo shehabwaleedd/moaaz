@@ -2,12 +2,12 @@ import React from 'react'
 import './About.css'
 import video from "../../assets/videos/1.mp4"
 import { motion } from "framer-motion";
-
+import img from "../../assets/DSC_8259-1 (1).jpg"
 const About = () => {
     return (
-        <section className='about'>
+        <motion.section className='about' initial={{ opacity: 0, transition: { delay: 0.3, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, transition: { delay: 0.5, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>
             <div className="about__container">
-                <div className="about__left">
+                <motion.div className="about__left" initial={{ opacity: 0, x: -100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, x: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, x: -500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>
                     <h1>About Me</h1>
                     <div className="about__left__container">
                         <h3>Welcome to the vibrant world of Moaaz Askaar, a young Nubian percussionist hailing from Egypt. At the age of 32, Moaaz has already carved a significant name for himself in the music industry, following in the footsteps of his father, the legendary Folklore Nubian Singer, Saaber Askaar. With a profound passion for music flowing through his veins, Moaaz's journey has been a harmonious fusion of traditional Nubian rhythms, the energetic Rai music of Algeria, and the soul-stirring melodies of Sufi music.</h3>
@@ -22,16 +22,16 @@ const About = () => {
                         <h3>As Moaaz's journey unfolds, he remains steadfast in his dedication to the art of music. A beacon of inspiration for aspiring musicians and music enthusiasts alike, he continues to explore, innovate, and create music that transcends boundaries. From the heart of Egypt to the far reaches of the world, Moaaz's rhythmic magic spreads joy, love, and unity, making the world a more harmonious place, one beat at a time.</h3>
                         <h3>Join him on his musical voyage, and let the enchanting rhythms of Moaaz Askaar take you on a transformative journey of melodies and emotions. Experience the essence of Nubia, the passion of Rai, and the spirituality of Sufi music through the percussive artistry of a young maestro whose beats echo the very rhythm of life.</h3>
                     </div>
-                </div>
+                </motion.div>
                 <div className="about__right">
-                    <motion.div className="right__video__background" initial={{ opacity: 0, y: -100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, y: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, y: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>
-                        <video controls loop autoPlay>
+                    <motion.div className="right__video__background" initial={{ opacity: 0, x: 100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, x: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, x: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>
+                        <motion.video controls loop autoPlay muted initial={{ opacity: 0, x: 100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, x: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, x: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>
                             <source src={video} type="video/mp4" />
-                        </video>
+                        </motion.video>
                     </motion.div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 }
 

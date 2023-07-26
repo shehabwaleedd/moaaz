@@ -73,10 +73,13 @@
 
     }
 
-    .nav__left h1 {
+    .nav__left span {
         font-size: 1.2rem;
-
-
+        text-decoration: none;
+        text-decoration-color: transparent;
+        text-underline-offset: 0; 
+        display: flex;
+        justify-content: center;
     }
 
     .nav__middle h1 {
@@ -85,6 +88,7 @@
         justify-content: center;
         align-items: center;
         letter-spacing: normal;
+        padding-left: 4rem;
     }
 }
 

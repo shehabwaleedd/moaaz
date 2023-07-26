@@ -6,6 +6,7 @@ import ScrollUp from './components/scrollup/ScrollUp';
 import SiteHome from './pages/siteHome/SiteHome';
 import Navbar from './navbar/Navbar';
 import About from './pages/about/About';
+import Contact from './pages/contact/Contact';
 import { motion } from 'framer-motion';
 import Work from './pages/work/Work';
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/" element={<SiteHome />} />
           <Route path="/work" element={<Work />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </AnimatePresence>
       <ScrollUp />

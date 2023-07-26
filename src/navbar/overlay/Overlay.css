@@ -115,3 +115,19 @@
 .hover-link:focus>span>span {
     transform: translateY(-200%);
 }
+
+@media (max-width: 475px) {
+    .overlay__list li a {
+        font-size: 2.5rem;
+    }
+    .overlay__container {
+        display: flex;
+        position: relative;
+        z-index: 9;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 70vh;
+        width: 100%;
+    }
+}
