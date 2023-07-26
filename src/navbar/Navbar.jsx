@@ -10,7 +10,7 @@ const Navbar = () => {
                     <h1>View Work</h1>
                 </Link>
                 <Link to="/" className="nav__middle">
-                    <h1>Moaaz Askar</h1>
+                    <h1>Moaaz</h1>
                 </Link>
                 <Link to="/overlay" className="nav__right">
                     <PiDotsNine style={{
