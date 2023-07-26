@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.css'
 import { motion } from 'framer-motion'
-import img from "../../assets/DSC_8267-1.jpg"
+import img from "../../assets/DSC_8267-1.avif"
 
 const Contact = () => {
     return (
