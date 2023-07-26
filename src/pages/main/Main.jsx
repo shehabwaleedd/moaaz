@@ -1,10 +1,11 @@
 import React from 'react'
 import './Main.css'
 import main from "../../assets/moaz.png"
-import {BiSolidMusic}   from 'react-icons/bi'
+import { BiSolidMusic } from 'react-icons/bi'
 import { motion } from "framer-motion";
 import { useLocation } from 'react-router-dom';
-import {useEffect} from 'react'
+import { useEffect, useState, useRef } from 'react'
+import beat from "../../assets/videos/tribal-drums-african-rhythm-ethnic-percussion-typographic-music-125773.mp3"
 
 const Main = () => {
 
@@ -12,6 +13,21 @@ const Main = () => {
     useEffect(() => {
         console.log('Current location:', location.pathname);
     }, [location.pathname]);
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    // Reference to the audio element
+    const audioRef = useRef(null);
+
+
+    const toggleMusic = () => {
+        if (isPlaying) {
+            audioRef.current.pause();
+        } else {
+            audioRef.current.play();
+        }
+        setIsPlaying(prevIsPlaying => !prevIsPlaying);
+    };
+
     return (
         <main className='main'>
             <div className="main__background">
@@ -22,7 +38,7 @@ const Main = () => {
                 </motion.div>
                 <motion.div className="col2" initial={{ opacity: 1, width: "200vw", transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, width: "37vw", transition: { delay: 0.2, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 1, width: "200vw", transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1.3, ease: [0.42, 0, 0.58, 1] } }}></motion.div>
                 <div className="col3">
-                <motion.div className="col3__bottom__right" initial={{ opacity: 0, y: -100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, y: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 0.7, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, y: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>
+                    <motion.div className="col3__bottom__right" initial={{ opacity: 0, y: -100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, y: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 0.7, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, y: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>
                         <h3>A Cutting Edge Musical Expiernce Designed to revolutionize the way people interact with african beats and rythms</h3>
                         <h3>Exceptional African Experience and Authentic Egyptian Vibes</h3>
                     </motion.div>
@@ -34,10 +50,16 @@ const Main = () => {
                     <motion.h2 initial={{ opacity: 0, y: -100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, y: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 0.7, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, y: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>NUBIAN PERCUSSIONIST</motion.h2>
                 </motion.div>
                 <div className="main__image">
-                    <motion.img src={main} alt="" initial={{ opacity: 0, y: 100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, y: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 0.7, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, y: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }}/>
-                    <motion.div className="image__circle " initial={{ opacity: 0, transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, y: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 0.7, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, y: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }}>
-                        <div className="circle__inner rotate">
-                            <BiSolidMusic style={{fontSize: "3.3rem"}}/>
+                    <motion.img src={main} alt="" initial={{ opacity: 0, y: 100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, y: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 0.7, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, y: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} />
+                    <motion.div
+                        className="image__circle"
+                        initial={{ opacity: 0, transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }}
+                        animate={{ opacity: 1, y: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 0.7, ease: [0.42, 0, 0.58, 1] } }}
+                        exit={{ opacity: 0, y: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }}
+                        onClick={toggleMusic}
+                    >
+                        <div className={`circle__inner ${isPlaying ? 'rotate' : ''}`}>
+                            <BiSolidMusic style={{ fontSize: "3.3rem" }} />
                         </div>
                     </motion.div>
                 </div>
@@ -45,6 +67,7 @@ const Main = () => {
 
                 </div>
             </div>
+            <audio ref={audioRef} src={beat} loop />
         </main>
     )
 }
