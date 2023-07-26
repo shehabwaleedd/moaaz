@@ -36,7 +36,7 @@ const Main = () => {
                         <motion.h3 initial={{ opacity: 0, x: -100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, x: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, x: -500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>As an authentic nubian PERCUSSIONIST, I focus on producing top-notch and impactful beats and rythms that always stand out.</motion.h3>
                     </div>
                 </motion.div>
-                <motion.div className="col2"></motion.div>
+                <motion.div className="col2"  initial={{ opacity: 0, width: "40vw", transition: { staggerChildren: 3.5, duration: 0.1, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, width: "40vw", transition: { delay: 0.5, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, width: "40vw", transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}></motion.div>
                 <div className="col3">
                     <motion.div className="col3__bottom__right" >
                         <motion.h3 initial={{ opacity: 0, x: 100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, x: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, x: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>A Cutting Edge Musical Expiernce Designed to revolutionize the way people interact with african beats and rythms</motion.h3>

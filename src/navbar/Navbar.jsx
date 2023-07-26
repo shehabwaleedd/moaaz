@@ -45,7 +45,7 @@ const Navbar = ({ navOpen, setNavOpen, handleMenuClose }) => {
                         transitionDelay: navOpen ? '0s' : '0s',
                     }}
                 >
-                    <Overlay />
+                    <Overlay handleMenuClose={handleMenuClose}/>
                 </div>
             </div>
         </nav>

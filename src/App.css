@@ -1,8 +1,8 @@
 #dark {
   --title-color: #ffffdacc;
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 50%);
-  --body-color: #eee7e1;
+  --text-color: #ffffdaa6;
+  --body-color: #454636;
+  --alternative-color: #7b5543b3;
   --container-color: #f3e9e1;
   --nav-color: #698269;
   --rim-color: #212121;
@@ -13,21 +13,9 @@
   --insider-color: #fff2e0;
   --accent-color-darker: #244224;
   --border-color: #698269;
-  --blog-text-color: hsl(var(--hue), var(--sat), 45%);
-  --progressive-bar-color: #6f988a;
-  --stack-accent-color: #fafafa;
-  --stack-icons-background-color: #1e1e1e;
   --logo-color: hsl(var(--hue), var(--sat), 60%);
   --overlay-color: #eee7e1;
   --nav-overlay-color: #1b1b1b;
-  --project-text-animation-color: #6d6d6d;
-  --logo-color: hsl(var(--hue), var(--sat), 39%);
-  --experience-text-color: #557c58;
-  --education-text-color: #946c9f;
-  --footer-border-color: 1px solid rgba(0, 0, 0, 0.1);
-  --about-transition-color: #1b1b1b;
-  --projects-transition-color: #1b1b1b;
-  --contact-transition-color: #1b1b1b;
 }
 
 
@@ -40,7 +28,7 @@
   --title-color: hsl(var(--hue), var(--sat), 30%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: #fff7f3;
+  --body-color: #454636;
   --container-color: #fef4ee;
   --accent-color-darker: #244224;
   --border-color: #698269;

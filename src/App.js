@@ -5,7 +5,8 @@ import { AnimatePresence } from 'framer-motion';
 import ScrollUp from './components/scrollup/ScrollUp';
 import SiteHome from './pages/siteHome/SiteHome';
 import Navbar from './navbar/Navbar';
-import Overlay from './navbar/overlay/Overlay';
+import About from './pages/about/About';
+import { motion } from 'framer-motion';
 import Work from './pages/work/Work';
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
     setNavOpen(false);
   };
 
-  
+
 
 
   return (
@@ -32,6 +33,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<SiteHome />} />
           <Route path="/work" element={<Work />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </AnimatePresence>
       <ScrollUp />
