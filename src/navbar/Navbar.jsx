@@ -28,7 +28,7 @@ const Navbar = ({ navOpen, setNavOpen, handleMenuClose }) => {
                 <Link to='/' className='nav__middle' onClick={handleMenuClose}>
                     <h1>Moaaz</h1>
                 </Link>
-                <Link className='nav__right' onClick={() => {
+                <div className='nav__right' onClick={() => {
                     toggleRotation();
                 }}>
                     <div className={`menu__dots ${navOpen ? 'rotated' : ''}`}>
@@ -37,7 +37,7 @@ const Navbar = ({ navOpen, setNavOpen, handleMenuClose }) => {
                         <div className='dot'></div>
                         <div className='dot'></div>
                     </div>
-                </Link>
+                </div>
                 <div
                     className='nav-overlay'
                     style={{
