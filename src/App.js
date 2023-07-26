@@ -18,18 +18,20 @@ function App() {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
   };
+  const handleMenuClose = () => {
+    setNavOpen(false);
+  };
+
   
 
 
   return (
     <div className="App" id={theme}>
-      <Navbar theme={theme} toggleTheme={toggleTheme} navOpen={navOpen} setNavOpen={setNavOpen} isMobile={isMobile} setIsMobile={setIsMobile} />
+      <Navbar theme={theme} handleMenuClose={handleMenuClose} location={location} toggleTheme={toggleTheme} navOpen={navOpen} setNavOpen={setNavOpen} isMobile={isMobile} setIsMobile={setIsMobile} />
       <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<SiteHome />} />
-          <Route path="/overlay" element={<Overlay />} />
           <Route path="/work" element={<Work />} />
-
         </Routes>
       </AnimatePresence>
       <ScrollUp />

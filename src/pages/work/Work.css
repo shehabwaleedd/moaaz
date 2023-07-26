@@ -3,11 +3,39 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 100vw;
     background-color: var(--bg-color);
     padding: 2rem 0;
     min-height: 100vh;
     padding-top: 8rem;
+}
+
+.video__background h1 {
+
+    font-size: 3rem;
+    width: 100%;
+    font-weight: 700;
+    color: var(--title-color);
+    font-family: 'ClashDisplay-Bold';
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    margin-bottom: 2rem;
+    z-index: 2;
+    text-align: left;
+    position: absolute;
+    letter-spacing: 1rem;
+    top: 50%;
+    left: 38%;
+}
+
+.video__background video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 95vw;
+    height: 70vh;
+    object-fit: cover;
+    z-index: 1;
 }
 
 .work__container {
@@ -15,6 +43,7 @@
     align-items: center;
     justify-content: center;
     width: 90%;
+    padding-top: 5rem;
 }
 
 .video-grid {
@@ -48,3 +77,4 @@
         grid-template-rows: repeat(9, 1fr);
     }
 }
+

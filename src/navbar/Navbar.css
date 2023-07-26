@@ -21,8 +21,8 @@
     margin-right: 1rem;
 }
 
-.nav__left h1 {
-    font-size: 1.5rem;
+.nav__left span{
+    font-size: 2rem;
     font-weight: 700;
     color: var(--title-color);
     font-family: 'ClashDisplay-Bold';
@@ -33,20 +33,28 @@
     cursor: pointer;
 }
 
-.nav__middle {
+.nav__left {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.nav__middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7.5rem;
+}
+
 .nav__middle h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--title-color);
     font-family: 'ClashDisplay-Bold';
     text-transform: uppercase;
     letter-spacing: 0.4rem;
     margin-right: 2rem;
+    text-align: center;
 }
 
 .nav__right {
@@ -79,3 +87,38 @@
         letter-spacing: normal;
     }
 }
+
+.menu__dots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    transition: all 1.52s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--title-color);
+    border-radius: 0.625rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+    transition: all 1.52s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.rotated {
+    transform: rotate(45deg);
+    /* Rotate the dots 45 degrees */
+    transition: all 1.52s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav-overlay {
+    position: fixed;
+    z-index: -1;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: all 1.52s cubic-bezier(0.16, 1, 0.3, 1);
+    background-color: var(--nav-overlay-color);
+}
+
