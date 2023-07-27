@@ -7,7 +7,6 @@ import SiteHome from './pages/siteHome/SiteHome';
 import Navbar from './navbar/Navbar';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
-import { motion } from 'framer-motion';
 import Work from './pages/work/Work';
 
 function App() {
