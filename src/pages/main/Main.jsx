@@ -1,8 +1,5 @@
 import React from 'react'
-import './Main.css'
 import main from "../../assets/moaz.png"
-import { BiSolidMusic } from 'react-icons/bi'
-import { motion } from "framer-motion";
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState, useRef } from 'react'
 import beat from "../../assets/videos/tribal-drums-african-rhythm-ethnic-percussion-typographic-music-125773.mp3"
@@ -36,7 +33,7 @@ const Main = ({ isMobile, isTablet }) => {
             {isMobile ? (
                 <MobileResponsive main={main} isPlaying={isPlaying} setIsPlaying={setIsPlaying} audioRef={audioRef} toggleMusic={toggleMusic} beat={beat} />
             ) : isTablet ? (
-                <TabletResponsive isPlaying={isPlaying} setIsPlaying={setIsPlaying} audioRef={audioRef} toggleMusic={toggleMusic} beat={beat} />
+                <TabletResponsive main={main} isPlaying={isPlaying} setIsPlaying={setIsPlaying} audioRef={audioRef} toggleMusic={toggleMusic} beat={beat} />
             ) : ( 
                 <DesktopResponsive isPlaying={isPlaying} setIsPlaying={setIsPlaying} audioRef={audioRef} toggleMusic={toggleMusic} beat={beat} />
             )}
