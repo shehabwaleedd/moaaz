@@ -31,6 +31,7 @@
     text-decoration-color: var(--title-color);
     text-underline-offset: 0.7rem;
     cursor: pointer;
+    padding-left: 0.34rem;
 }
 
 .nav__left {

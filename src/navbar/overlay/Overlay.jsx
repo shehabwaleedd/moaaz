@@ -2,8 +2,9 @@ import React from 'react'
 import './Overlay.css'
 import { Link } from 'react-router-dom'
 import { motion } from "framer-motion";
+import { FiArrowUpRight } from 'react-icons/fi'
 
-const Overlay = ({handleMenuClose}) => {
+const Overlay = ({ handleMenuClose }) => {
     return (
         <motion.section className='overlay'>
             <div className="overlay__background"></div>
@@ -40,6 +41,33 @@ const Overlay = ({handleMenuClose}) => {
                         </li>
                     </ul>
                 </motion.div>
+                <div className="nav-footer" style={{ position: "absolute", bottom: "10rem",}}>
+                    <div className="navbar-social-media">
+                        <ul>
+                            <li>
+                                <Link to="https://www.instagram.com/moazaskar36" target="__blank" rel="noreferrer">
+                                    <span>Instagram</span>
+                                    <FiArrowUpRight style={{color: "var(--title-color)"}}/>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="https://www.facebook.com/mooaz.askar" target="__blank" rel="noreferrer">
+                                    <span>Facebook</span>
+                                    <FiArrowUpRight style={{color: "var(--title-color)"}}/>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="https://wa.me/+201152570233?text=Hello,%20I%20would%20like%20to%20get%20in%20touch%20with%20you.%20" target="__blank" rel="noreferrer">
+                                    <span>Whatsapp</span>
+                                    <FiArrowUpRight style={{color: "var(--title-color)"}}/>
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="navbar__location" style={{left: "0", bottom: "-5rem"}}>
+                        <h2>Aswan, Egypt</h2>
+                    </div>
+                </div>
             </div>
         </motion.section>
     )

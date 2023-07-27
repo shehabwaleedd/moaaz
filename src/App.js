@@ -8,6 +8,7 @@ import Navbar from './navbar/Navbar';
 import About from './pages/about/About';
 import Contact from './pages/contact/Contact';
 import Work from './pages/work/Work';
+import Footer from './components/footer/Footer';
 
 function App() {
   const location = useLocation();

@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    padding-bottom: 10rem;
+
 }
 
 .contact img {
@@ -139,4 +139,40 @@
     }
 
 
+}
+
+.contact__footer {
+    position: absolute;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100vw;
+    border-top: 0.3px solid #ffffdaaf;
+}
+
+.contact__footer_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100vw;
+    padding: 1rem;
+}
+
+.contact__footer_container h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: lowercase;
+    color: #ffffda;
+    letter-spacing: 0.1rem;
+    font-family: 'ClashDisplay-Regular';
+}
+
+.contact__footer_container h4 a {
+    color: #ffffda;
+    font-family: 'ClashDisplay-Regular';
 }
