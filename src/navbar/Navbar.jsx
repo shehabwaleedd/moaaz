@@ -66,11 +66,7 @@ const Navbar = ({ navOpen, setNavOpen, handleMenuClose, setIsMobile, setIsTablet
                 </div>
                 <div
                     className='nav-overlay'
-                    style={{
-                        top: navOpen ? '0' : '-150%',
-                        transitionDelay: navOpen ? '0s' : '0s',
-                    }}
-                >
+                    style={{top: navOpen ? '0' : '-150%',transitionDelay: navOpen ? '0s' : '0s',}}>
                     <Overlay handleMenuClose={handleMenuClose} />
                 </div>
             </div>
