@@ -1,10 +1,10 @@
 import React from 'react'
 import Main from '../main/Main'
 
-const SiteHome = ({location}) => {
+const SiteHome = ({location, isTablet, isMobile}) => {
     return (
         <>
-            <Main  location={location}/>
+            <Main  location={location}  isTablet={isTablet} isMobile={isMobile}/>
         </>
     )
 }

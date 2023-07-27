@@ -3,7 +3,7 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 import Overlay from './overlay/Overlay';
 
-const Navbar = ({ navOpen, setNavOpen, handleMenuClose }) => {
+const Navbar = ({ navOpen, setNavOpen, handleMenuClose, setIsMobile, setIsTablet, isTablet}) => {
     const toggleRotation = () => {
         setNavOpen(!navOpen);
     };
@@ -15,6 +15,32 @@ const Navbar = ({ navOpen, setNavOpen, handleMenuClose }) => {
             document.body.classList.remove('no-scroll');
         }
     }, [navOpen]);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 468);
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+    useEffect(() => {
+        const handleResize = () => {
+            setIsTablet(window.innerWidth <= 968);
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <nav className='nav'>
@@ -45,7 +71,7 @@ const Navbar = ({ navOpen, setNavOpen, handleMenuClose }) => {
                         transitionDelay: navOpen ? '0s' : '0s',
                     }}
                 >
-                    <Overlay handleMenuClose={handleMenuClose}/>
+                    <Overlay handleMenuClose={handleMenuClose} />
                 </div>
             </div>
         </nav>

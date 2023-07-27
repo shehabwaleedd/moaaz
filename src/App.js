@@ -15,6 +15,7 @@ function App() {
   const [theme, setTheme] = useState('dark');
   const [navOpen, setNavOpen] = React.useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -29,13 +30,13 @@ function App() {
 
   return (
     <div className="App" id={theme}>
-      <Navbar theme={theme} handleMenuClose={handleMenuClose} location={location} toggleTheme={toggleTheme} navOpen={navOpen} setNavOpen={setNavOpen} isMobile={isMobile} setIsMobile={setIsMobile} />
+      <Navbar theme={theme} isTablet={isTablet} setIsTablet={setIsTablet} handleMenuClose={handleMenuClose} location={location} toggleTheme={toggleTheme} navOpen={navOpen} setNavOpen={setNavOpen} isMobile={isMobile} setIsMobile={setIsMobile} />
       <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<SiteHome />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<SiteHome isTablet={isTablet} isMobile={isMobile}/>} />
+          <Route path="/work" element={<Work isTablet={isTablet} isMobile={isMobile}/>} />
+          <Route path="/about" element={<About isTablet={isTablet} isMobile={isMobile}/>} />
+          <Route path="/contact" element={<Contact isTablet={isTablet} isMobile={isMobile}/>} />
         </Routes>
       </AnimatePresence>
       <ScrollUp />
