@@ -4,7 +4,6 @@ import { useLocation } from "react-router-dom";
 import './Work.css'
 import Videos from './Data';
 import video from "../../assets/videos/6.mp4"
-import img from "../../assets/DSC_8259-1 (1).jpg"
 import { motion } from "framer-motion";
 const Work = () => {
 

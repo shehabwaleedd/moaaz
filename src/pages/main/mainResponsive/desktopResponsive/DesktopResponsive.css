@@ -211,3 +211,32 @@
 }
 
 
+@media (max-width: 1028px) {
+    .main__image {
+        top: 15rem;
+    }
+    .main__container h1 {
+        font-size: 5.7rem;
+    }
+    .main__container h2 {
+        font-size: 4.7rem;
+    }
+
+    .main__image img {
+        width: 80vw;
+        height: 80vh;
+        object-fit: contain;
+        object-position: center;
+        border-radius: 40rem;
+    }
+    .image__circle {
+        height: 14vh;
+        width: 11vw;
+        top: 17rem;
+        border-radius: 50%;
+        left: -3rem;
+        background-color: #ffffda;
+        border: 5px solid var(--nav-overlay-color);
+        cursor: pointer;
+    }
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import main from "../../assets/moaz.png"
+import main from "../../assets/moaz.avif"
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState, useRef } from 'react'
 import beat from "../../assets/videos/tribal-drums-african-rhythm-ethnic-percussion-typographic-music-125773.mp3"
