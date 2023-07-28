@@ -22,7 +22,6 @@
     width: 50%;
     padding: 0 2rem;
     margin-top: 10rem;
-
 }
 
 .about__right {
@@ -58,6 +57,24 @@
     align-items: flex-start;
     justify-content: center;
     width: 100%;
+}
+
+.about__festivals {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.about__festivals h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-family: 'ClashDisplay-Bold';
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    color: var(--title-color);
 }
 
 .about__left__container h3 {

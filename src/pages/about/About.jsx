@@ -11,6 +11,16 @@ const About = () => {
                     <div className="about__left__container">
                         <h3>Welcome to the vibrant world of Moaaz Askaar, a young Nubian percussionist hailing from Egypt. At the age of 32, Moaaz has already carved a significant name for himself in the music industry, following in the footsteps of his father, the legendary Folklore Nubian Singer, Saaber Askaar. With a profound passion for music flowing through his veins, Moaaz's journey has been a harmonious fusion of traditional Nubian rhythms, the energetic Rai music of Algeria, and the soul-stirring melodies of Sufi music.</h3>
                         <h3>Moaaz's love for music ignited at a tender age, as he was surrounded by the rich musical heritage of his Nubian roots. Growing up in Egypt, he found inspiration in the vibrant cultural tapestry of the region, a melting pot of ancient traditions and contemporary influences. Immersed in the rhythms of life, the young musician embarked on a musical quest that would shape his destiny.</h3>
+                        <div className="about__festivals">
+                            <h2>Moaaz international festivals:</h2>
+                            <h3>•	International Festival of Baltopren, Denmark 2019</h3>
+                            <h3>•	Al-Hadra Women's Festival, Morocco 2017</h3>
+                            <h3>•	Sur Jahan Festival, Kolkata. India 2023</h3>
+                            <h3>•	Kairouan Festival, Tunisia 2019</h3>
+                            <h3>•	International Festival of Sufi Music, Morocco 2018</h3>
+                            <h3>•	Kuwait Festival at Al-Shaheed Theater, Kuwait, 2017</h3>
+                            <h3>    International Jordan Musicial Festival, Jordan, 2017</h3>
+                        </div>
                         <h3>His musical odyssey began when he co-founded the band "Raina," a group dedicated to the popular Rai music of Algeria. Rai music, known for its dynamic beats and poetic lyrics, resonated deeply with Moaaz's soul. As the band's heartbeat, Moaaz's percussions added a distinctive Nubian touch to the Rai tunes, creating a harmonious blend of North African melodies. Under his guidance, "Raina" rose to prominence, enchanting audiences far and wide with their electrifying performances.</h3>
                         <h3>However, Moaaz's artistic spirit knew no bounds, and he ventured into yet another mesmerizing realm of music. In collaboration with the renowned Sufi singer Amer Eltony, he co-founded the ethereal band "Mawlwaya El Mawlaweya." Sufi music, with its spiritual essence and transcendent aura, spoke to Moaaz's soul on a profound level. With his masterful percussion skills, he added depth and rhythm to the enchanting Sufi melodies, creating an otherworldly musical experience.</h3>
                         <h3>As an artist, Moaaz's creativity knows no limits. Beyond his involvement in "Raina" and "Mawlwaya El Mawlaweya," he explores diverse genres, constantly pushing the boundaries of his artistry. African Beats, in particular, have captured his heart, allowing him to delve into the rhythmic diversity of the continent. Moaaz's ability to seamlessly blend traditional African rhythms with contemporary sounds sets him apart as an innovative force in the music industry.</h3>
