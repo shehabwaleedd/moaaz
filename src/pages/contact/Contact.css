@@ -137,7 +137,16 @@
     .contact__right {
         transform: translate(-2rem, 0rem);
     }
-
+    .contact__footer_container h1 {
+        font-size: 1rem;
+    }
+    .contact__footer_container {
+        flex-direction: column; 
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
 
 }
 
