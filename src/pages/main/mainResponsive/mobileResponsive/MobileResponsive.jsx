@@ -24,7 +24,6 @@ const MobileResponsive = ({ isPlaying, setIsPlaying, audioRef, toggleMusic, beat
                     <motion.h4 initial={{ opacity: 0, x: 100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, x: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, x: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>Exceptional African Experience and Authentic Egyptian Vibes</motion.h4>
                 </div>
                 <div className="main__image-mobile">
-                    <img src={main} alt="main_image-mobile" />
                     <motion.div initial={{ opacity: 0, transition: { delay: 0.3, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, transition: { delay: 0.5, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}exit={{ opacity: 0, transition: { velocity: 2, staggerChildren: 1.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }}
                         className="image__circle-mobile"
                         onClick={toggleMusic}>
