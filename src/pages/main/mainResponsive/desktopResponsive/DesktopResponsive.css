@@ -290,11 +290,11 @@
     }
 
     .image__circle {
-        height: 19vh;
-        width: 11vw;
-        top: 22rem;
+        height: 11vh;
+        width: 6vw;
+        top: 7.4rem;
         border-radius: 50%;
-        left: -5rem;
+        left: 27.4rem;
     }
 
     .col1__bottom__left h3 {
@@ -315,6 +315,12 @@
 
     .col3__bottom__right h4 {
         font-size: 2rem;
+    }
+    .lets__talk {
+        position: absolute;
+        z-index: 999999;
+        left: 12rem;
+        top: 52em;
     }
 
 }
