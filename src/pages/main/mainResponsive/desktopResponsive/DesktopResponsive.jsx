@@ -3,6 +3,7 @@ import './DesktopResponsive.css'
 import { motion } from 'framer-motion'
 import { BiSolidMusic } from 'react-icons/bi'
 import { Link } from 'react-router-dom'
+import { BsArrowRight } from 'react-icons/bs'
 
 const DesktopResponsive = ({ isPlaying, setIsPlaying, audioRef, toggleMusic, beat }) => {
     return (
@@ -41,7 +42,7 @@ const DesktopResponsive = ({ isPlaying, setIsPlaying, audioRef, toggleMusic, bea
                 </div>
                 <motion.div className="bottom__container" initial={{ opacity: 0, transition: { delay: 0.3, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, transition: { delay: 0.5, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, transition: { velocity: 2, staggerChildren: 1.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }}>
                     <Link to="/contact" className="lets__talk">
-                        <button>Let's Talk</button>
+                        <button>Let's Talk <BsArrowRight style={{fontSize: "2rem"}}/></button>
                     </Link>
                 </motion.div>
             </div>
