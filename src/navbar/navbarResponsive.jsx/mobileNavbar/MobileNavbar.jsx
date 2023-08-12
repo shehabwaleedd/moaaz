@@ -7,7 +7,7 @@ import './MobileNavbar.css'
 const MobileNavbar = ({ navOpen, handleMenuClose, toggleRotation, isMobile }) => {
     return (
         <div className='nav__container-mobile'>
-            <Link to='/work' className='nav__left-mobile hover-link' onClick={handleMenuClose}>
+            <Link to='/work' className='nav__left-mobile' onClick={handleMenuClose}>
                 <span>View Work</span>
             </Link>
             <Link to='/' className='nav__middle-mobile' onClick={handleMenuClose}>

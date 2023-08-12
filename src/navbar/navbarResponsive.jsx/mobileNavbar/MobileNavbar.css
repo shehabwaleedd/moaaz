@@ -2,7 +2,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .nav__left-mobile span{
@@ -11,7 +11,6 @@
     color: var(--title-color);
     font-family: 'ClashDisplay-Bold';
     text-transform: uppercase;
-    text-decoration: underline;
     text-decoration-color: var(--title-color);
     text-underline-offset: 0.7rem;
     cursor: pointer;

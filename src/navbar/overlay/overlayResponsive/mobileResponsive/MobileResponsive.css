@@ -52,6 +52,12 @@
     text-align: left;
 }
 
+@media (max-width: 445px) {
+    .nav-footer-mobile {
+        bottom: 4rem;
+    }
+}
+
 @media (max-width: 389px) {
     .nav-footer-mobile {
         bottom: 5rem;

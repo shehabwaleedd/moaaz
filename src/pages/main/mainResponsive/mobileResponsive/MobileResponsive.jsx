@@ -2,6 +2,9 @@ import React from 'react'
 import './MobileResponsive.css'
 import { motion } from 'framer-motion'
 import { BiSolidMusic } from 'react-icons/bi'
+import { Link } from 'react-router-dom'
+import { BsArrowRight } from 'react-icons/bs'
+
 
 const MobileResponsive = ({ isPlaying, setIsPlaying, audioRef, toggleMusic, beat, main }) => {
     return (
@@ -24,7 +27,7 @@ const MobileResponsive = ({ isPlaying, setIsPlaying, audioRef, toggleMusic, beat
                     <motion.h4 initial={{ opacity: 0, x: 100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, x: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, x: 500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>Exceptional African Experience and Authentic Egyptian Vibes</motion.h4>
                 </div>
                 <div className="main__image-mobile">
-                    <motion.div initial={{ opacity: 0, transition: { delay: 0.3, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, transition: { delay: 0.5, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}exit={{ opacity: 0, transition: { velocity: 2, staggerChildren: 1.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }}
+                    <motion.div initial={{ opacity: 0, transition: { delay: 0.3, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, transition: { delay: 0.5, staggerChildren: 3.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, transition: { velocity: 2, staggerChildren: 1.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }}
                         className="image__circle-mobile"
                         onClick={toggleMusic}>
                         <div className={`circle__inner ${isPlaying ? 'waves' : ''}`}>
@@ -33,7 +36,9 @@ const MobileResponsive = ({ isPlaying, setIsPlaying, audioRef, toggleMusic, beat
                     </motion.div>
                 </div>
                 <div className="bottom__container">
-
+                    <Link to="/contact" className="lets__talk">
+                        <button>Let's Talk <BsArrowRight style={{ fontSize: "2rem" }} /></button>
+                    </Link>
                 </div>
             </div>
             <audio ref={audioRef} src={beat} loop />
