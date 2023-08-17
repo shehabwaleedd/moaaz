@@ -25,7 +25,7 @@ const Work = () => {
                     {Videos.map((video) => (
                         <div className="video-item" key={video.id}>
                             <video controls>
-                                <source src={video.url} type="video/mp4" />
+                                <source src={video.url} type="video/mp4" poster={video.url}/>
                             </video>
                         </div>
                     ))}
