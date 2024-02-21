@@ -68,7 +68,7 @@ const Main = () => {
                 <div className={styles.main__container__videos}>
                     <div className={styles.main__container__videos__left}>
                         <motion.p>Videos</motion.p>
-                        <Link to="/videos">See All</Link>
+                        <Link to="/work">See All</Link>
                     </div>
                     <video src={video1} autoPlay loop controls playsInline className={styles.main__container__videos__video}></video>
                 </div>

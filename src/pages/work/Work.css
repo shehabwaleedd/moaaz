@@ -9,32 +9,43 @@
     padding-top: 8rem;
 }
 
-.video__background h1 {
-
-    font-size: 3rem;
+.video__background {
+    position: relative;
+    height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.video__background h1 {
+    font-size: 3rem;
     font-weight: 700;
-    color: var(--title-color);
+    color: var(--nav-color);
     font-family: 'ClashDisplay-Bold';
     text-transform: uppercase;
-    letter-spacing: 0.4rem;
-    margin-bottom: 2rem;
-    z-index: 2;
-    text-align: left;
+    letter-spacing: normal;
     position: absolute;
-    letter-spacing: 1rem;
     top: 50%;
-    left: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
 }
 
 .video__background video {
     position: relative;
     top: 0;
     left: 0;
-    width: 95vw;
+    width: 99vw;
     height: 70vh;
     object-fit: cover;
     z-index: 1;
+    border-radius: 1rem;
 }
 
 .work__container {
@@ -74,23 +85,5 @@
     .video-grid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(9, 1fr);
-    }
-    .video__background h1 {
-        font-size: 2.5rem;
-        left: 15%;
-    }
-}
-
-@media (max-width: 401px) {
-    .video__background h1 {
-        font-size: 2rem;
-        left: 10%;
-    }
-}
-
-@media (max-width: 378px) {
-    .video__background h1 {
-        font-size: 2rem;
-        left: 10%;
     }
 }
