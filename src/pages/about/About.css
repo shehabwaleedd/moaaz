@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background-color: var(--rim-color);
 }
 
 .about__container {
@@ -49,6 +50,7 @@
     font-family: 'ClashDisplay-Bold';
     text-transform: uppercase;
     letter-spacing: 0.3rem;
+    color: var(--nav-color);
 }
 
 .about__left__container {
@@ -74,7 +76,7 @@
     font-family: 'ClashDisplay-Bold';
     text-transform: uppercase;
     letter-spacing: 0.3rem;
-    color: var(--title-color);
+    color: var(--nav-color);
 }
 
 .about__left__container h3 {
@@ -83,7 +85,7 @@
     font-family: 'ClashDisplay-Regular';
     text-transform: uppercase;
     letter-spacing: 0.14rem;
-    color: var(--text-color);
+    color: var(--nav-color);
 }
 
 

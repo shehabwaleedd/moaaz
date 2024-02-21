@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--nav-bg-color);
+    background-color: transparent;
     z-index: 100;
 }
 
